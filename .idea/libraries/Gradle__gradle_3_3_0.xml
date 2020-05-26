@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: gradle-3.3.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/3.3.0/bcb8b8acc91b5a79346027bdfdd1fded03942088/gradle-3.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/3.3.0/e81fd056223d84a87b0a4fb5b9e1606e63afea66/gradle-3.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
