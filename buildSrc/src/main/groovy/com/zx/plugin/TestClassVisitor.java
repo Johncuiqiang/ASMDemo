@@ -47,7 +47,7 @@ public class TestClassVisitor extends ClassVisitor {
     @Override
     public MethodVisitor visitMethod(int access, String name, String desc, String signature, String[] exceptions) {
         MethodVisitor methodVisitor = cv.visitMethod(access, name, desc, signature, exceptions);
-        return new InsertMethodVisitor(methodVisitor, name);
+        return new ReplaceMethodVisitor(methodVisitor, name);
         //return methodVisitor;
     }
 

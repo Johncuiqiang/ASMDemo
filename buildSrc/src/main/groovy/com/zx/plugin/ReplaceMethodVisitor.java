@@ -1,5 +1,7 @@
 package com.zx.plugin;
 
+import com.android.ddmlib.Log;
+
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
 
@@ -36,8 +38,9 @@ public class ReplaceMethodVisitor extends MethodVisitor {
 
     @Override
     public void visitMethodInsn(int opcode, String owner, String name, String desc, boolean itf) {
-        if (name.equals("setText")){
-            super.visitMethodInsn(opcode, owner, name, desc, itf);
+        if (name.equals("setText") && desc.equals("()V")){
+            super.visitMethodInsn(Opcodes.INVOKESTATIC, "com/wuba/asmdemo/ProxyText", "setText",
+                    "()V", false);
         } else {
             super.visitMethodInsn(opcode, owner, name, desc, itf);
         }
